@@ -1,0 +1,175 @@
+% resume.tex
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{enumitem}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+\def\labelitemiii{$\bullet$}
+\def\labelitemiv{--}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Brett Jurgens}}
+
+297 Plum Drive\ \ \textbullet
+\ \ Marlboro, NJ 07746
+\\
+(732) 858-1540\ \ \textbullet
+\ \ brett@brettjurgens.com\ \ \textbullet
+\ \ brettjurgens (GitHub)
+\end{center}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Work Experience}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{Uncorkd, Inc.}}
+		{\textbf{Chicago, IL}}
+	\\
+	\headerrow
+		{\emph{Software Development Intern \ -- \ http://www.uncorkd.biz}}
+		{\emph{June-August 2013}}
+	\begin{itemize*}
+		\item Gained experience with CodeIgniter (PHP), Javascript, D3.js, and CSS
+		\item Redesigned the company logo and instituted a site-wide design change with a modern design language
+		\item Built an "analytics dashboard" with visualization powered by D3.js
+		\item Built a web version of the company's mobile app
+		\item Actively tested and fixed bugs throughout the site
+	\end{itemize*}
+	
+	\item
+	\headerrow
+		{\textbf{Gift Finder, Inc.}}
+		{\textbf{New York, NY}}
+	\\
+	\headerrow
+		{\emph{Software Development Intern \ -- \ http://www.giftfinder.com}}
+		{\emph{June-August 2012}}
+	\begin{itemize*}
+		\item Gained experience with CakePHP, CoffeeScript, Ruby on Rails, and Sass
+		\item Worked with mockups made in Adobe Illustrator to build the website's 
+		front-end
+	\end{itemize*}
+
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Project Experience}
+\begin{description}[leftmargin=0pt]
+	\parskip=0.1em
+      
+      \item[CS 465 Final Project]\hfill\\
+      We developed a mobile application which allows a user to crowdsource 
+      decisions and gather feedback from friends by sending them a picture. 
+      Users are able to view the results in an easy to understand manner.
+      
+      \item[CS 498STK Final Project]\hfill\\
+      For our final project we developed a mobile website to allow a user to 
+      create a "trip," invite other users and collect location data on the way. 
+      Users can also send each other realtime messages and share their 
+      trip online after its completion.
+      
+	\item[Chambana Bus] {\emph{http://www.chambanabus.com}}\hfill\\
+      Website which allows the user to plan trips, find closest stops (using HTML5 
+	Geolocation), and more for the local bus service.
+
+	\item[MovieAggregator] {\emph{http://www.movieaggregator.com}}\hfill\\
+      Hackathon project to aggregate data from 6 different movie-focused 
+      websites, including IMDB, Amazon, Rotten Tomatoes, iTunes, TheMovieDB, and 
+      Netflix. Displays important details about the user-requested film, 
+      computed rating, and its availability to stream on Netflix or buy on 
+      iTunes and Amazon.
+
+	\item[BatchDefine] {\emph{http://www.batchdefine.com}}\hfill\\
+      Website created in High School to allow a user to input a list of words 
+      and receive the definitions in an organized, save-able, and exportable list. 
+      It makes use of Dictionary.com's API to gather the definitions and 
+      Facebook's OpenGraph API to share actions to Facebook.
+
+	
+\end{description}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{University of Illinois at Urbana-Champaign}}
+		{\textbf{Urbana, IL}}
+	\\
+	\headerrow
+		{\emph{College of Engineering, B.S. Computer Science}}
+		{\emph{August 2011 -- May 2015 (expected)}}
+	\begin{itemize*}
+		\item Organizations:
+		\begin{itemize}
+		  \item Pi Kappa Phi Fraternity
+		  \begin{description}
+		    \item[Historian] Elected position on the Executive Council in charge of Alumni and Parental 
+		    Relations.
+		    \item[Standards Board Justice] Responsible for upholding the standards of 
+		    the organization.
+		  \end{description}
+		  \item IEEE
+		  \item ACM
+		\end{itemize}
+		\item Relevant Courses:
+		
+		Introduction to Computer Science, Discrete Structures, Data Structures and 
+		Programming Principles, Computer Architecture, Systems Programming, 
+		The Art and Science of Web Programming, Theory of Computation, 
+		User Interface Design
+	\end{itemize*}
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Skills and Interests}
+
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Languages:]
+       C/\CPP, CSS/Sass, HTML/Haml, Java, Javascript/CoffeeScript, \LaTeX, MySQL, PHP, Python, Ruby
+	\item[Services:]
+	Amazon Web Service, Google App Engine, Heroku
+	\item[Frameworks & Libraries:]
+	Android SDK, CakePHP, CodeIgniter, Facebook SDK, Flash, jQuery, Ruby on Rails, Sinatra, webapp2
+	\item[Graphic Design:]
+	Adobe Illustrator, Adobe Photoshop, UI \& Web Design
+	\item[Interests:]
+	Android, Databases, Human Computer Interaction \& User Interface Design, Web 
+	Applications
+\end{description*}
+
+\end{document}
